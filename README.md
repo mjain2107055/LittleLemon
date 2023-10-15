@@ -13,10 +13,10 @@ python3 -m pipenv install djoser
 
 
 ## my SQL details - 
-username - admindjango __ 
-password - employee@123! __
-Port - 3306 __
-HOST - 127.0.0.1 __
+username - admindjango _ _ 
+password - employee@123! _ _
+Port - 3306 _ _
+HOST - 127.0.0.1 _ _
 
 # super user login details
   username - admin
