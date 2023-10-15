@@ -29,7 +29,8 @@ HOST - 127.0.0.1 <br />
   **Menu Page** - http://127.0.0.1:8000/menu/ <br />
   **Book table page for user** - http://127.0.0.1:8000/book/ <br />
   **All - Reservation detail page** - http://127.0.0.1:8000/reservations/ <br />
-  **Menu API to get all menu permission to authenticated user only** - http://127.0.0.1:8000/api/menu-items/ <br />
+  **ALL Menu API to get all menu permission to authenticated user only can use GET, POST Method*** - http://127.0.0.1:8000/api/menu-items/ <br />
+  **Single Menu Item API permission for autheniticated user for PUT, PATCH, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
   **ALL Booking API permission for autheniticated user for GET, POST Method** - http://127.0.0.1:8000/api/bookings/ <br />
   **Single Booking API permission for autheniticated user for PUT, PATCH, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
   **List of All users** - http://127.0.0.1:8000/auth/users/ <br />
