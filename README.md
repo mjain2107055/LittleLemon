@@ -38,9 +38,9 @@ HOST - 127.0.0.1 <br />
   **Generate Token by provding user credential** - http://127.0.0.1:8000/auth/token/login/ <br />
 
 # Test Details
-  test_create_item =  to test the Menu model Run OK
-  BookingTest - to check the booking Model Run Ok
-  MenuItemSerializerTestCase - check if serializer data display correctly
-  test_menu_serializer_update - check if serializer data updated correctly
+  **test_create_item**  to test the Menu model Run OK  <br />
+  **BookingTest** - to check the booking Model Run Ok  <br />
+  **MenuItemSerializerTestCase** - check if serializer data display correctly  <br />
+  **test_menu_serializer_update** - check if serializer data updated correctly  <br />
 
   
