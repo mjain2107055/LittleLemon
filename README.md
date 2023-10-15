@@ -1,7 +1,9 @@
 # LittleLemon
 
-# commands
-  python3 -m pipenv shell - **activate the shell**
+## commands
+### activate the shell**
+  
+  python3 -m pipenv shell - 
   python3 -m pipenv install django - **install django**
   python3 -m pipenv install djangorestframework - **install rest_framework**
   python3 -m pipenv install myslqclient  - **install mysqlclient**
