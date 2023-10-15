@@ -20,8 +20,8 @@ Port - 3306 <br />
 HOST - 127.0.0.1 <br />
 
 # super user login details
-  username - admin
-  password  - admin@123!
+  username - admin <br />
+  password  - admin@123! <br />
 
 # UI & APIs
   **Home Page** - http://127.0.0.1:8000/
