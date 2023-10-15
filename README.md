@@ -30,8 +30,8 @@ HOST - 127.0.0.1 <br />
   **Book table page for user** - http://127.0.0.1:8000/book/ <br />
   **All - Reservation detail page** - http://127.0.0.1:8000/reservations/ <br />
   **Menu API to get all menu permission to authenticated user only** - http://127.0.0.1:8000/api/menu-items/ <br />
-  **ALL Booking API permission for autheniticated user for GET POST Method** - http://127.0.0.1:8000/api/bookings/ <br />
-  **Single Booking API permission for autheniticated user for PUT POST DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
+  **ALL Booking API permission for autheniticated user for GET, POST Method** - http://127.0.0.1:8000/api/bookings/ <br />
+  **Single Booking API permission for autheniticated user for PUT, POST, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
   **List of All users** - http://127.0.0.1:8000/auth/users/ <br />
   **Current User** - http://127.0.0.1:8000/auth/users/me/  <br />
   **Generate Token** - http://127.0.0.1:8000/auth/token/login/ <br />
