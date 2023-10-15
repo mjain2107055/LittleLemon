@@ -1,7 +1,7 @@
 # LittleLemon
 
 ## commands
-### activate the shell**
+### activate the shell
   
   python3 -m pipenv shell - 
   python3 -m pipenv install django - **install django**
