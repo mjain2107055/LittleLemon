@@ -9,7 +9,7 @@ class MenuItemSerializers(serializers.ModelSerializer):
 
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Booking
+        model = models.booking_Model
         fields = '__all__'
 class userSerializer(serializers.ModelSerializer):
     class Meta:
