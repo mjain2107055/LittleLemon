@@ -8,7 +8,7 @@ class booking_Model(models.Model):
     reservation_slot = models.SmallIntegerField(default=10)
     
     def __str__(self) -> str:
-        return self.name
+        return self.first_name
 
 class Menu(models.Model):
     title = models.CharField(max_length=255)
