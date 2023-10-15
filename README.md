@@ -33,7 +33,7 @@ HOST - 127.0.0.1 <br />
   **Single Menu Item API permission for autheniticated user for PUT, PATCH, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
   **ALL Booking API permission for autheniticated user for GET, POST Method** - http://127.0.0.1:8000/api/bookings/ <br />
   **Single Booking API permission for autheniticated user for PUT, PATCH, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
-  **List of All users** - http://127.0.0.1:8000/auth/users/ <br />
+  **List of All users Add new user, Edit existing user** - http://127.0.0.1:8000/auth/users/ <br />
   **Current User** - http://127.0.0.1:8000/auth/users/me/  <br />
   **Generate Token by provding user credential** - http://127.0.0.1:8000/auth/token/login/ <br />
 
