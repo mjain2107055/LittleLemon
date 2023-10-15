@@ -1,12 +1,17 @@
 # LittleLemon
-
 ## commands
 ### activate the shell
-  python3 -m pipenv shell - 
- ### install django
-  python3 -m pipenv install django -
-  python3 -m pipenv install djangorestframework - **install rest_framework**
-  python3 -m pipenv install myslqclient  - **install mysqlclient**
+python3 -m pipenv shell
+### install django
+python3 -m pipenv install django
+### install rest_framework
+python3 -m pipenv install djangorestframework
+### install mysqlclient 
+python3 -m pipenv install myslqclient
+### install djoser 
+python3 -m pipenv install djoser
+
+
 # my SQL details - 
   username - admindjango 
   password - employee@123!
