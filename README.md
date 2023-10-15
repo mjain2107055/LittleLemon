@@ -35,7 +35,7 @@ HOST - 127.0.0.1 <br />
   **Single Booking API permission for autheniticated user for PUT, PATCH, DELETE** - http://127.0.0.1:8000/api/bookings/1 <br />
   **List of All users** - http://127.0.0.1:8000/auth/users/ <br />
   **Current User** - http://127.0.0.1:8000/auth/users/me/  <br />
-  **Generate Token** - http://127.0.0.1:8000/auth/token/login/ <br />
+  **Generate Token by provding user credential** - http://127.0.0.1:8000/auth/token/login/ <br />
 
 # Test Details
   test_create_item =  to test the Menu model Run OK
