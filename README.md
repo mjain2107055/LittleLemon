@@ -12,11 +12,11 @@ python3 -m pipenv install myslqclient
 python3 -m pipenv install djoser
 
 
-# my SQL details - 
-  username - admindjango 
-  password - employee@123!
-  Port - 3306
-  HOST - 127.0.0.1
+## my SQL details - 
+username - admindjango 
+password - employee@123!
+Port - 3306
+HOST - 127.0.0.1
 
 # super user login details
   username - admin
