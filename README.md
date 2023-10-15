@@ -14,6 +14,7 @@ python3 -m pipenv install djoser
 
 ## my SQL details - 
 username - admindjango <br />
+databasename - littlelemon
 password - employee@123! <br />
 Port - 3306 <br />
 HOST - 127.0.0.1 <br />
