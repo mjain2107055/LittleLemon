@@ -14,10 +14,11 @@ class MenuItemSerializers(serializers.ModelSerializer):
     )
     class Meta:
         model = models.Menu
-        fields = ['id', 'title', 'price', 'category', 'inventory','featured','description']
+        fields = ['id', 'title', 'price', 'category', 
+                  'inventory','featured','description']
 
 class CartSerializer(serializers.ModelSerializer):
-    #unit_price = serializers.DecimalField(max_digits=6, decimal_places=2, source = models.MenuItem.price)
+    
     user = serializers.PrimaryKeyRelatedField(
         queryset=User.objects.all(),
         default=serializers.CurrentUserDefault()

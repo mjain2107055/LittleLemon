@@ -4,7 +4,9 @@ from rest_framework.views import APIView
 from rest_framework import generics
 from .models import booking_Model,Menu,Cart,Category,Order,OrderItem
 from django.contrib.auth.models import User,Group
-from .serializers import BookingSerializer, MenuItemSerializers, UserSerilializer,CategorySerializer,CartSerializer,OrderSerializer,OrderItemSerializer
+from .serializers import BookingSerializer, MenuItemSerializers
+from .serializers import UserSerilializer,CategorySerializer
+from .serializers import  CartSerializer,OrderSerializer,OrderItemSerializer
 from rest_framework import status,viewsets
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from .forms import BookingForm
@@ -130,8 +132,10 @@ class OrderView(generics.ListCreateAPIView):
             return Order.objects.all()
         elif self.request.user.groups.count()==0: #normal customer - no group
             return Order.objects.all().filter(user=self.request.user)
-        elif self.request.user.groups.filter(name='Delivery Crew').exists(): #delivery crew
-            return Order.objects.all().filter(delivery_crew=self.request.user)  #only show oreders assigned to him
+        elif self.request.user.groups.filter(name='Delivery Crew').exists(): 
+            #delivery crew
+            return Order.objects.all().filter(delivery_crew=self.request.user)  
+            #only show oreders assigned to him
         else: #delivery crew or manager
             return Order.objects.all()
         # else:
@@ -180,13 +184,15 @@ class SingleOrderView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
 
     def update(self, request, *args, **kwargs):
-        if self.request.user.groups.count()==0: # Normal user, not belonging to any group = Customer
+        if self.request.user.groups.count()==0: 
+            # Normal user, not belonging to any group = Customer
             return Response('You do not have permission',status.HTTP_403_FORBIDDEN)
         else: #everyone else - Super Admin, Manager and Delivery Crew
             return super().update(request, *args, **kwargs)
         
     def delete(self, request, *args, **kwargs):
-        if self.request.user.groups.count()==0: # Normal user, not belonging to any group = Customer
+        if self.request.user.groups.count()==0: 
+            # Normal user, not belonging to any group = Customer
             return Response('You do not have permission',status.HTTP_403_FORBIDDEN)
         else: #everyone else - Super Admin, Manager and Delivery Crew
             return super().delete(request, *args, **kwargs)
